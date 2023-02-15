@@ -29,7 +29,7 @@
 ### 💻・Instalação
 - `1.` Baixe o projeto ou clone com:
 ```bash
-git clone https://github.com/SkeThurzin/Cloud-Main
+git clone https://github.com/SkeThurzin/Cloud-Bot.git
 ```
 - `2.` Abre a pasta do projeto;
 - `3.` No terminal para instalação das dependências, execute o comando:
