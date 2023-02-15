@@ -7,7 +7,7 @@ module.exports = {
   once: false,
   async execute(message, client, emoji) {
     try {
-      const server = await Guild.findOne({
+      const guild = await Guild.findOne({
         idS: message.guild.id,
       });
       let user = await User.findOne({
@@ -20,7 +20,7 @@ module.exports = {
           idS: message.guild.id,
         });
 
-      if (!server) await Guild.create({ idS: message.guild.id });
+      if (!guild) await Guild.create({ idS: message.guild.id });
 
       user = await User.findOne({
         idU: message.author.id,
