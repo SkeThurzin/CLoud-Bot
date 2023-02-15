@@ -113,7 +113,7 @@ module.exports = {
 
 ### 📝 License
 
-Este projeto está sob a licença MIT. Consulte o LICENSE para obter detalhes.
+Este projeto está sob a licença MIT. Consulte o LICENSE para obter detalhes!.
 
 ### 🪐 Créditos
 
