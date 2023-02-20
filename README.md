@@ -1,4 +1,4 @@
-### 👋 Hello! Welcome to my Bt's soucer, Cloud. Follow the steps below to turn it on.
+### 👋 Hello! Welcome to my Bot soucer, Cloud. Follow the steps below to turn it on.
 
 ---
 
