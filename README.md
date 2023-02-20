@@ -12,6 +12,10 @@
 - `1.` Crie uma aplicação em [Discord Developer Portal](https://discord.com/developers/applications)
 - `2.` Vá ate a aba "Bot":
 
-- ![image](https://user-images.githubusercontent.com/117662023/220201581-da304afe-0450-479a-8f57-e784722441f8.png)
+![image](https://user-images.githubusercontent.com/117662023/220201581-da304afe-0450-479a-8f57-e784722441f8.png)
 
 - `3.` Clique em "Add Bot"
+- `4.` Dessa para Baixo e ative as 3 intents: 
+
+![image](https://user-images.githubusercontent.com/117662023/220202174-7902e453-a227-4314-b085-b2f6c66f5c83.png)
+
