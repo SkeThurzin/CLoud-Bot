@@ -1,17 +1,18 @@
-const { Schema, model } = require("mongoose");
+const { Schema, model } = require('mongoose');
 
 let userSchema = new Schema({
-	idU: { type: String },
+  idU: { type: String },
 
-	registro: { type: Boolean, default: false },
+  registro: { type: Boolean, default: false },
   /* Misc */
+  langon: { type: Boolean, default: false },
   registrar: { type: Boolean, default: false },
   /* Economia */
   coins: { type: Number, default: 0 },
   daily: { type: Number, default: 0 },
   Ecoins: { type: Number, default: 0 },
   /* Insignias */
-  beta: { type: String, default: "" },
+  beta: { type: String, default: '' },
   /* RPG */
   hunt: { type: Number, default: 0 },
   area: { type: Number, default: 1 },
@@ -22,15 +23,17 @@ let userSchema = new Schema({
     xp: { type: Number, default: 1 },
     level: { type: Number, default: 1 },
     nextLevel: { type: Number, default: 100 },
-    id: { type: String, default: "null" },
-    user: { type: String, default: "null" },
+    id: { type: String, default: 'null' },
+    user: { type: String, default: 'null' },
+  },
+  Quests: {
+    a: { type: Boolean, default: false },
+    b: { type: Boolean, default: false },
+    c: { type: Boolean, default: false },
   },
   /* Pets */
   coruja: { type: Number, default: 100 },
   pet: { type: Boolean, default: false },
-  petname: { type: String, default: "Não possui" }
-
-  
-
-})
+  petname: { type: String, default: 'Não possui' },
+});
 module.exports = model('Users', userSchema);

@@ -1,11 +1,11 @@
-const User = require("../../DataBase/User");
-const Guild = require("../../DataBase/Guild");
-const chalk = require("chalk");
+const User = require('../../DataBase/User');
+const Guild = require('../../DataBase/Guild');
+const chalk = require('chalk');
 
 module.exports = {
-  name: "interactionCreate",
+  name: 'interactionCreate',
   once: false,
-  async execute (interaction, client) {
+  async execute(interaction, client) {
     if (interaction.isChatInputCommand()) {
       const commandName = interaction.commandName;
       const command = client.commands.get(commandName);
@@ -23,21 +23,21 @@ module.exports = {
         if (!guild) {
           await Guild.create({ idS: interaction.guild.id });
         } else if (!user) {
-          await User.create(
-            { idU: interaction.user.id },
-            { $set: { registro: true } }
-          );
+          await User.create({ idU: interaction.user.id }, { $set: { registro: true } });
         } else if (user.registrar === false) {
-          interaction.reply(`Opss! Não posso executar meu comandos pq você não esta registrado. Utilize </rpg registrar:1066897272790601828>`)
+          interaction.reply(
+            `Opss! Não posso executar meu comandos pq você não esta registrado. Utilize </rpg registrar:1066897272790601828>`
+          );
         }
-        const emoji = require("../../Utils/emojis.js");
+        const lang = require(`../../languages/${guild.language}`);
+        const emoji = require('../../utils/emojis.js');
         console.log(
           chalk.blue(
             `User: ${interaction.user.tag} - UserID: ${interaction.user.id} - Server: ${interaction.guild} - ServerID: ${interaction.guild.id} - Comando: ${command.name}`
           )
         );
         if (!command) return;
-        command.execute(client, interaction, emoji);
+        command.execute(client, interaction, emoji, lang);
       }
     }
   },
