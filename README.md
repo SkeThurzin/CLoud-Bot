@@ -63,10 +63,3 @@ node index.js
 ### 📝 License
 
 Este projeto está sob a licença MIT. Consulte o LICENSE para obter detalhes!.
-
-### 🪐 Créditos
-
-Feito por [SkeThur#4836](https://discord.com/users/506299442924879876) GitHub: [github.com/SkeThurzin](github.com/SkeThurzin)
-=======
-Esse projeto contem a licensa Mit, Va ate [LICENSE](https://github.com/SkeThurzin/Cloud-Bot/blob/main/LICENSE) para mais informações.
->>>>>>> 0debced96e9698d22ccd2149ae34feea53b95f1e
