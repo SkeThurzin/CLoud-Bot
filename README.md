@@ -1,8 +1,12 @@
-### 👋 Hello! Welcome to my Bot's soucer, Cloud. Follow the steps below to turn it on.
+### 👋 Hello! Welcome to my Bt's soucer, Cloud. Follow the steps below to turn it on.
 
 ---
 
-### ➰ Recursos:
+### ➰ Resources:
 
-- `1.` Comandos em Slash/Comandos em `/`; </br>
-- `2.` DataBase em MongoDB/Mongooe;
+- `1.` Commands in Slash/Commands in `/` </br>
+- `2.` DataBase in MongoDB/Mongoose.
+
+### 🪐 How to start:
+
+- `1.` Crie uma aplicação em [Discord Developer Portal](https://discord.com/developers/applications)
