@@ -1,5 +1,5 @@
 module.exports = {
-  misc: 'Olé!',
+  misc: 'Olá!',
   languageCommand: {
     en: 'English',
     pt: 'Portuguese',
@@ -7,6 +7,7 @@ module.exports = {
     msg1: 'Qual sua linguagem?',
   },
   rpgCommand: {
+    about: "Como você quer aprender sobre o meu RPG?",
     title: `Bem-vindo ao meu RPG`,
     desc2: `O objetivo desse jogo é **desvendar e explorar varios mundos** e para se tornar mais forte e **desbloquer novos comandos**.
     Há um total de **5** mundos e você esta na `,

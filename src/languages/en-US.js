@@ -7,7 +7,7 @@ module.exports = {
     msg1: 'What is your language?',
   },
   rpgCommand: {
-    sla: `How do you want to learn about my RPG?`,
+    about: `How do you want to learn about my RPG?`,
     title: `Welcome to my RPG`,
     desc2: `The aim of this game is to **uncover and explore various worlds** and to become stronger and **unlock new commands**.
     There are a total of **5** worlds and you are in `,

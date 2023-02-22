@@ -10,13 +10,6 @@ module.exports = {
       const commandName = interaction.commandName;
       const command = client.commands.get(commandName);
 
-      if (command) {
-        if (command.requireDatabase) {
-          interaction.guild.db =
-            (await client.db.guilds.findById(interaction.guild.id)) ||
-            new client.db.guilds({ idS: interaction.guild.id });
-        }
-
         const guild = await Guild.findOne({ idS: interaction.guild.id });
         const user = await User.findOne({ idU: interaction.user.id });
 
@@ -24,10 +17,6 @@ module.exports = {
           await Guild.create({ idS: interaction.guild.id });
         } else if (!user) {
           await User.create({ idU: interaction.user.id }, { $set: { registro: true } });
-        } else if (user.registrar === false) {
-          interaction.reply(
-            `Opss! Não posso executar meu comandos pq você não esta registrado. Utilize </rpg registrar:1066897272790601828>`
-          );
         }
         const lang = require(`../../languages/${guild.language}`);
         const emoji = require('../../utils/emojis.js');
@@ -38,7 +27,6 @@ module.exports = {
         );
         if (!command) return;
         command.execute(client, interaction, emoji, lang);
-      }
     }
   },
 };

@@ -151,7 +151,7 @@ module.exports = {
                       iconURL: `${client.user.displayAvatarURL({ extension: 'png', size: 128 })}`,
                     })
                     .setDescription(
-                      `${emoji.nuvem} **⇏** ${lang.misc} ${interaction.user} ${lang.rpgCommand.sla}`
+                      `${emoji.nuvem} **⇏** ${lang.misc} ${interaction.user} ${lang.rpgCommand.about}`
                     )
                     .setColor(process.env.COLOR),
                 ],
